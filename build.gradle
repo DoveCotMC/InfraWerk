@@ -46,19 +46,21 @@ dependencies {
     modImplementation "maven.modrinth:modmenu:7.2.2"
 
     // Mod menu
-    modImplementation "maven.modrinth:metropolis:0.7.1-beta"
+    modImplementation "maven.modrinth:metropolis:${project.metropolis_version}"
 }
 
 processResources {
     inputs.property "version", project.version
     inputs.property "minecraft_version", project.minecraft_version
     inputs.property "loader_version", project.loader_version
+    inputs.property "metropolis_version", project.metropolis_version
     filteringCharset "UTF-8"
 
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
                 "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+                "loader_version": project.loader_version,
+                "metropolis_version": project.metropolis_version
     }
 }
 

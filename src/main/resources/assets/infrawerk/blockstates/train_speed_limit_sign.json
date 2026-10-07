@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "infrawerk:block/sign/train_speed_limit_sign/train_speed_limit_sign",
+            "y": 0
+        },
+        "facing=east": {
+            "model": "infrawerk:block/sign/train_speed_limit_sign/train_speed_limit_sign",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "infrawerk:block/sign/train_speed_limit_sign/train_speed_limit_sign",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "infrawerk:block/sign/train_speed_limit_sign/train_speed_limit_sign",
+            "y": 270
+        }
+    }
+}

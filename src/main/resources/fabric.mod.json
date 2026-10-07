@@ -1,0 +1,31 @@
+{
+    "schemaVersion": 1,
+    "id": "infrawerk",
+    "version": "${version}",
+    "name": "InfraWerk",
+    "description": "Station Decorations and Railway Infrastructure for Minecraft.",
+    "authors": [],
+    "contact": {},
+    "license": "MIT",
+    "icon": "assets/infrawerk/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "fabric-datagen": [
+            "team.dovecot.infrawerk.client.InfrawerkDataGenerator"
+        ],
+        "client": [
+            "team.dovecot.infrawerk.client.InfrawerkClient"
+        ],
+        "main": [
+            "team.dovecot.infrawerk.Infrawerk"
+        ]
+    },
+    "mixins": [
+        "infrawerk.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric-api": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}

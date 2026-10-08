@@ -10,8 +10,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import team.dovecotmc.metropolis.block.AbstractBlockTracksideSignBase;
 import team.dovecotmc.metropolis.util.MetroBlockUtil;
 
-public class BlockTrainSpeedLimitSign extends AbstractBlockTracksideSignBase {
-    public BlockTrainSpeedLimitSign(Properties properties) {
+public class BlockBaseTracksideSign extends AbstractBlockTracksideSignBase {
+    public BlockBaseTracksideSign(Properties properties) {
         super(properties);
     }
 
@@ -25,8 +25,8 @@ public class BlockTrainSpeedLimitSign extends AbstractBlockTracksideSignBase {
                         facing
                 ),
                 MetroBlockUtil.getVoxelShapeByDirection(
-                        6, 3, 5.5,
-                        14, 13, 8,
+                        4, 3, 5.5,
+                        12, 13, 8,
                         blockState.getValue(FACING)
                 )
         );

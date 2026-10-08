@@ -5,6 +5,7 @@
 	"textures": {
 		"0": "infrawerk:block/sign/trackside_sign_pillar",
 		"1": "infrawerk:block/sign/train_speed_limit_sign/train_speed_limit_sign",
+		"2": "infrawerk:block/sign/signal_sign_symbols",
 		"particle": "infrawerk:block/sign/trackside_sign_pillar"
 	},
 	"elements": [
@@ -32,6 +33,19 @@
 				"west": {"uv": [6, 0, 8, 16], "texture": "#0"},
 				"up": {"uv": [10, 2, 8, 0], "texture": "#0"},
 				"down": {"uv": [10, 2, 8, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4.5, 3.5, 6],
+			"to": [11.5, 12.5, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 3, 5]},
+			"faces": {
+				"north": {"uv": [0, 0, 1.5, 2], "texture": "#2"},
+				"east": {"uv": [0, 0, 0, 4.5], "texture": "#2"},
+				"south": {"uv": [1.5, 0, 0, 2], "texture": "#2"},
+				"west": {"uv": [0, 0, 0, 4.5], "texture": "#2"},
+				"up": {"uv": [0, 0, 3.5, 0], "texture": "#2"},
+				"down": {"uv": [0, 0, 3.5, 0], "texture": "#2"}
 			}
 		}
 	]

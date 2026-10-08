@@ -15,6 +15,7 @@ public final class InfraItems {
     private static final List<Item> TAB_ITEMS = new ArrayList();
 
     public static final Item TRAIN_SPEED_LIMIT_SIGN = register("train_speed_limit_sign", new BlockItem(InfraBlocks.TRAIN_SPEED_LIMIT_SIGN, new Item.Properties()));
+    public static final Item TRAIN_WHISTLE_SIGN = register("train_whistle_sign", new BlockItem(InfraBlocks.TRAIN_WHISTLE_SIGN, new Item.Properties()));
 
     public static Item register(String id, Item item) {
         return register(id, item, true);
